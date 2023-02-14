@@ -34,7 +34,7 @@ if (data.users == "") {
 
     const fail_embed = new EmbedBuilder()
     .setColor("2f3037")
-    .setAuthor({ name: 'Catware | Error'})
+.setAuthor({ name: `${ServerName} | Error` })
     .setDescription(`You are not whitelisted. If you wish to purchase open a ticket!`)
  .setFooter({ text: `Error`, iconURL: interaction.member.displayAvatarURL() })
  .setTimestamp();
@@ -48,7 +48,7 @@ if (data.users == "") {
   
     const success_embed = new EmbedBuilder()
     .setColor("2f3037")
-    .setAuthor({ name: 'Catware | Script' })
+    .setAuthor({ name: `${ServerName} | Script` })
     .setDescription(codeBlock('lua', `script_key="${key}"\nloadstring(game:HttpGet("${scriptloaderURL}", true))()`))
     .setTimestamp()
     .setFooter({ text: `This Script Is Locked To Your Hwid, Sharing It Will Not Work!`, iconURL: interaction.member.displayAvatarURL() })
