@@ -35,7 +35,7 @@ module.exports = {
         if (keydata.users == "") {
             const success_embed = new EmbedBuilder()
             .setColor("2f3037")
-            .setAuthor({ name: `${serverName} | Error`})
+            .setAuthor({ name: `${ServerName} | Error`})
             .setDescription(`Reponse: User is not whitelisted.`)
          .setFooter({ text: `Error not whitelisted`, iconURL: interaction.member.displayAvatarURL() })
          .setTimestamp();
@@ -66,9 +66,9 @@ module.exports = {
 
         const success_embed = new EmbedBuilder()
             .setColor("2f3037")
-            .setAuthor({ name: `${serverName} | Reset HWID` })
+            .setAuthor({ name: `${ServerName} | Reset HWID` })
             .setDescription(`Response: ${data.message}`)
-            .setFooter({ text: `${serverName}`, iconURL: interaction.guild.iconURL() })
+            .setFooter({ text: `${ServerName}`, iconURL: interaction.guild.iconURL() })
             .setTimestamp();
 
 
@@ -77,7 +77,7 @@ module.exports = {
         } else {
             const success_embed = new EmbedBuilder()
             .setColor("2f3037")
-            .setAuthor({ name: `{serverName} | Error`})
+            .setAuthor({ name: `${ServerName} | Error`})
             .setDescription(`You do not have permisson to do that.`)
          .setFooter({ text: `Error`, iconURL: interaction.member.displayAvatarURL() })
          .setTimestamp();
