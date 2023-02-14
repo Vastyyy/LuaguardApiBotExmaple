@@ -35,7 +35,7 @@ const member = interaction.options.getMember("user", true);
    .setColor("2f3037")
    .setAuthor({ name: `${ServerName} | Whitelist`})
    .setDescription(`Response: ${data.message}`)
-.setFooter({ text: `${serverName}`, iconURL: interaction.guild.iconURL() })
+.setFooter({ text: `${ServerName}`, iconURL: interaction.guild.iconURL() })
 .setTimestamp();
 
       const role = member.guild.roles.cache.find(role => role.id === BuyerRoleID);
