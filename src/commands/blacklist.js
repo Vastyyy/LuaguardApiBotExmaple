@@ -82,7 +82,7 @@ member.roles.remove(role);
 } else {
     const success_embed = new EmbedBuilder()
     .setColor("2f3037")
-    .setAuthor({ name: 'Catware | Error'})
+    .setAuthor({ name: `${ServerName} | Error`})
     .setDescription(`You do not have permisson to do that.`)
  .setFooter({ text: `Error`, iconURL: interaction.member.displayAvatarURL() })
  .setTimestamp();
